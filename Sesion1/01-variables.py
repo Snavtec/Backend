@@ -97,5 +97,3 @@ print(personas[1]['hobbies'])
 # la experiencia del segundo hobbie de la primera persona
 
 print(personas[0]['hobbies'][1]['experiencia'])
-
-
