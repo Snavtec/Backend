@@ -32,10 +32,10 @@ print(type(soltero))
 
 # VARIABLES que tienes varios valores
 # ARREGLOS = LISTAS LIST
-edades = [10, 12, 40, 60, 'Eduardo', 14.5, False, {1, 2}]
+edades = [10, 12, 40, 60, 'Eduardo', 14.5, False, [1, 2]]
 # para ingresar a los valores de una lista debemos indicar la POSICION que siempre empienza en 0 (CERO), ademas si queremos usar valores negativos entonces la lista empezara por la ultima posicion (-1 : la ultima posicion)
 # si nosotros en la posicion colocamos el siguiente formato: [n:m], entonces estaremos indicando que queremos ir desde la posicion 'n', hasta NOTA: siempre el recorrido sera de izquierda a derecha aun asi usemos posiciones negativas
-print(edades[2:4])
+print(edades[2:7])
 
 # JSON (JavaScript Object Notation) | Diccionario
 # Nota: Si una llave se repite su valor sera modificado y se perdera el anterior valor 
@@ -66,22 +66,25 @@ print(PrimerMes)
 personas = [{   
     'nombre'       : 'Eduardo',
     'nacionalidad' : 'peruano',
-    'hobbies'       : [
+    'hobbies'      : [
         {
             'nombre'      : 'Volar drones',
             'experiencia' : '2 años'
         },{
-            'nombre'       : 'Juliana',
-            'nacionalidad' : 'colombiana',
-            'hobbies'      : [
-                {
-                    'nombre'      : 'Montar bici',
-                    'experiencia' : '4 años'
-                },{
-                    'nombre' : 'Bases de datos',
-                    'experiencia' : '8 meses'
-                }
-            ]
+            'nombre'       : 'Programar',
+            'experiencia'  : '1 mes'
+        }
+    ]
+},{   
+    'nombre'       : 'Juliana',
+    'nacionalidad' : 'colombiana',
+    'hobbies'      : [
+        {
+            'nombre'      : 'Montar bici',
+            'experiencia' : '4 años'
+        },{
+            'nombre' : 'Bases de datos',
+            'experiencia' : '8 meses'     
         }
     ]
 }]
