@@ -17,7 +17,7 @@ class Persona:
         self.sexo = 'NS/NO'
 
 # Cuando a una variable le agregamos una clase, pasa a llamar una instancia de la clase (copia de la clase con todos sus atributos y metodos)
-samuel = Persona(nombre = 'Samuel', edad = 20, estatura = '1.89')
+samuel = Persona(nombre_de_la_persona = 'Samuel', edad_persona = 20, estatura_persona = '1.89')
 samuel.nombre = 'Samuel'
 samuel.saludar() 
 

@@ -6,4 +6,18 @@ from flask import Flask
 
 app = Flask (__name__)
 
-app.run()
+# El decorador sirve para usar el metodo de una clase pero implementandolo en una funcion
+@app.route('/')
+def inicio():
+    return 'Bienvenido a mi API'
+
+@app.route('/bienvenido')
+def bienvenido():
+    return 'Te doy la bienvenida a mi API'
+
+@app.route('/bienvenido/home')
+def bienvenido_home():
+    return 'Te doy la bienvenida a mi API home'
+
+if __name__ == '__main__':
+    app.run(debug=True, port=3000)
