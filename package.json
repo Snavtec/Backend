@@ -6,15 +6,15 @@
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start:dev":"nodemon index.js",
-    "start":"node index.js"
+    "start:dev": "nodemon index.js",
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Snavtec/Backend.git"
   },
   "keywords": [
-    "node.js",
+    "nodejs",
     "express",
     "middlewares"
   ],
@@ -25,6 +25,7 @@
   },
   "homepage": "https://github.com/Snavtec/Backend#readme",
   "dependencies": {
+    "cors": "^2.8.5",
     "express": "^4.17.2",
     "nodemon": "^2.0.15"
   }
