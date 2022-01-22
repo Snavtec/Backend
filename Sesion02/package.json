@@ -1,0 +1,27 @@
+{
+  "name": "minimarket",
+  "version": "1.0.0",
+  "description": "backend de un minimarket usando prisma",
+  "main": "index.js",
+  "scripts": {
+    "test": "prisma, express"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Snavtec/Backend.git"
+  },
+  "keywords": [
+    "prisma",
+    "express"
+  ],
+  "author": "Samuel Navarro",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Snavtec/Backend/issues"
+  },
+  "homepage": "https://github.com/Snavtec/Backend#readme",
+  "dependencies": {
+    "express": "^4.17.2",
+    "prisma": "^3.8.1"
+  }
+}
