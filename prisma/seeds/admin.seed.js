@@ -5,8 +5,8 @@ export default async (prisma) => {
 
   await prisma.usuario.upsert({
     create: {
-      nombre: "Eduardo",
-      correo: "ederiveroman@gmail.com",
+      nombre: "Samuel",
+      correo: "samuel.navarro2305@gmail.com",
       password,
       tipoUsuario: "ADMIN",
     },
@@ -15,7 +15,7 @@ export default async (prisma) => {
     },
     where: {
       // solamente se pueden declarar las columnas que sean unicas (unique) o las pk
-      correo: "ederiveroman@gmail.com",
+      correo: "samuel.navarro2305@gmail.com",
     },
   });
 };
