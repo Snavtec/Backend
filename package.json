@@ -4,11 +4,13 @@
   "description": "backend para una cafeteria",
   "main": "index.js",
   "type": "module",
-
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node src/index.js",
-    "start:dev": "dotenv -e .env -- nodemon src/index.js"
+    "start:dev": "dotenv -e .env -- nodemon src/index.js",
+    "crear_migracion": "prisma migrate dev",
+    "correr_migraciones": "prima migrate deploy",
+    "reset_db": "prisma migrate reset"
   },
   "repository": {
     "type": "git",
@@ -27,8 +29,10 @@
   "homepage": "https://github.com/Snavtec/Backend#readme",
   "dependencies": {
     "@prisma/client": "^3.8.1",
+    "aws-sdk": "^2.1069.0",
     "bcrypt": "^5.0.1",
     "class-validator": "^0.13.2",
+    "cors": "^2.8.5",
     "express": "^4.17.2",
     "jsonwebtoken": "^8.5.1",
     "morgan": "^1.10.0",
