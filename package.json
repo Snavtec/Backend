@@ -1,0 +1,35 @@
+{
+  "name": "chifa",
+  "version": "1.0.0",
+  "description": "backend del chifa ka lu wantan",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:dev": "nodemon ./src/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Snavtec/Backend.git"
+  },
+  "keywords": [
+    "express",
+    "mongo",
+    "nosql",
+    "multer"
+  ],
+  "author": "Samuel Navarro",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Snavtec/Backend/issues"
+  },
+  "homepage": "https://github.com/Snavtec/Backend#readme",
+  "dependencies": {
+    "express": "^4.17.2",
+    "mongoose": "^6.2.1"
+  },
+  "devDependencies": {
+    "dotenv-cli": "^5.0.0",
+    "nodemon": "^2.0.15"
+  }
+}
