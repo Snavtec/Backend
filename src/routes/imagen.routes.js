@@ -1,6 +1,7 @@
 import { Router } from "express";
 import Multer from "multer";
-
+import { nanoid } from "nanoid";
+import { subirImagen } from "../controllers/imagen.controllers.js";
 export const imagenRouter = Router();
 
 // sirve para indicar el formato en la cual se va a almacenar el archivo entrante
@@ -9,6 +10,7 @@ const almacenamiento = Multer.diskStorage({
     destination: "src/media/",
     // esto nos permite cambiar el nombre con el cual se guardara el archivo en nuestro servidor 
     filename: (req, archivo, callback) => {
+        const id = nanoid(5);
         const nombre = archivo.originalname;
         // como hacemos para evitar que si esa imagen ya existe no se sobre escriba??
         callback(null, nombre);
