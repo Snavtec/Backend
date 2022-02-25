@@ -1,6 +1,6 @@
 import { Router } from "express";
 import { crearProducto } from "../controller/producto.controller.js";
 
-export const ProductoRouter = Router();
+export const productoRouter = Router();
 
-ProductoRouter.route("/producto").post(crearProducto);
+productoRouter.route("/producto").post(crearProducto);
