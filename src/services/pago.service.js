@@ -1,10 +1,15 @@
 import mercadopago from "mercadopago";
+import { Cliente } from "../models/cliente.model.js";
+import { Producto } from "../models/producto.model.js";
 
 export class PagoService {
-  static async generarPreferenciaDePago() {
+  static async generarPreferenciaDePago({ item, cliente }) {
     // https://www.mercadopago.com.pe/developers/es/reference/preferences/_checkout_preferences/post
     try {
+      // buscar ese cliente
       const preferencia = await mercadopago.preferences.create({
+        // buscar esos productos (items)
+        // hacer la busqueda de los productos usando el .map() 
         payer: {
           name: "Samuel", // obligatorio
           surname: "Navarro", // obligatorio
@@ -37,6 +42,7 @@ export class PagoService {
           pending: "http://localhost:3000/pendiente",
           failure: "http://localhost:3000/fallo",
         },
+        notification_url: `${ process.env.DOMINIO }/notificaciones`,
       });
 
       return {
